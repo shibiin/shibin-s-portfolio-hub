@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 
 export const Hero = () => {
   return (
@@ -56,7 +56,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
-          className="flex flex-wrap gap-4"
+          className="flex flex-wrap gap-4 mb-8"
         >
           <a
             href="#projects"
@@ -69,6 +69,39 @@ export const Hero = () => {
             className="bg-primary text-primary-foreground px-8 py-3 rounded font-medium hover:bg-primary/90 transition-all duration-300"
           >
             Get In Touch
+          </a>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.7 }}
+          className="flex items-center gap-6"
+        >
+          <a
+            href="https://github.com/shibiint"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-primary transition-colors"
+            aria-label="GitHub"
+          >
+            <Github size={24} />
+          </a>
+          <a
+            href="https://linkedin.com/in/mohammed-shibin-t-7702aa395"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-primary transition-colors"
+            aria-label="LinkedIn"
+          >
+            <Linkedin size={24} />
+          </a>
+          <a
+            href="mailto:shibint11im@gmail.com"
+            className="text-muted-foreground hover:text-primary transition-colors"
+            aria-label="Email"
+          >
+            <Mail size={24} />
           </a>
         </motion.div>
       </div>

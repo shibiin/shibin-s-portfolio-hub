@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
-import { Send, Mail, Linkedin, MapPin } from 'lucide-react';
+import { Send, Mail, Linkedin, MapPin, Github } from 'lucide-react';
 import { toast } from 'sonner';
 
 export const Contact = () => {
@@ -86,6 +86,23 @@ export const Contact = () => {
                     className="text-foreground hover:text-primary transition-colors"
                   >
                     mohammed-shibin-t
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4 group">
+                <div className="p-3 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
+                  <Github className="text-primary" size={24} />
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground">GitHub</p>
+                  <a
+                    href="https://github.com/shibiint"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-foreground hover:text-primary transition-colors"
+                  >
+                    github.com/shibiint
                   </a>
                 </div>
               </div>

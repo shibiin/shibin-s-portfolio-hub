@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { GraduationCap, MapPin, Mail } from 'lucide-react';
+import profilePhoto from '@/assets/profile-photo.png';
 
 export const About = () => {
   const ref = useRef(null);
@@ -63,8 +64,12 @@ export const About = () => {
             <div className="relative group">
               <div className="relative w-full aspect-square max-w-[280px] mx-auto">
                 <div className="absolute inset-0 border-2 border-primary rounded translate-x-4 translate-y-4 transition-transform group-hover:translate-x-2 group-hover:translate-y-2" />
-                <div className="relative bg-primary/20 rounded overflow-hidden w-full h-full flex items-center justify-center">
-                  <div className="text-6xl font-bold text-primary/40 font-mono">MST</div>
+                <div className="relative rounded overflow-hidden w-full h-full">
+                  <img 
+                    src={profilePhoto} 
+                    alt="Mohammed Shibin T"
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
               </div>
             </div>
